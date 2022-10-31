@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../components/Home/Footer";
 import Header from "../../components/Home/Header";
 import Hero from "../../components/Home/Hero";
@@ -6,13 +6,19 @@ import Projects from "../../components/Home/Projects";
 import Projects2 from "../../components/Home/Projects2";
 import SideNavBar from "../../components/Home/SideNavbar";
 
-const Home = () => {
+const Home = ({setDarkMode,darkMode}) => {
   return (
-    <div className="scroll-smooth flex flex-col h-screen justify-between">
-      <Header />
-      <Hero />
-      {/* <Projects title="Projects" id="projects"/> */}
-      <Projects2 />
+    <div
+      className="scroll-smooth flex flex-col justify-between"
+    >
+      <header className="sticky top-0 z-50">
+        <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+      </header>
+      <main className="">
+        <Hero />
+        {/* <Projects title="Projects" id="projects"/> */}
+        <Projects2 />
+      </main>
 
       {/* <Content title="Languages and Tools" id="languages-and-tools"/> */}
 
