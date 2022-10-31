@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 
-const Header = ({setDarkMode,darkMode}) => {
+const Header = ({ setDarkMode, darkMode }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const links = [
@@ -30,18 +30,18 @@ const Header = ({setDarkMode,darkMode}) => {
 
   return (
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-      <div className="flex flex-wrap justify-between mx-auto max-w-screen-xl">
-        <div className="">
+      <div className="flex mx-auto max-w-screen-xl">
+        <div className="items-start">
           <a href="/" className="flex items-center">
             <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
               Jay.Kang
             </span>
           </a>
         </div>
-        <div className="flex items-center lg:order-2">
+        <div className="flex items-center ml-auto lg:order-2 lg:hidden">
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-1 h-full -w-full text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <svg
@@ -72,25 +72,26 @@ const Header = ({setDarkMode,darkMode}) => {
         </div>
         <div
           className={
-            "justify-between items-center lg:flex lg:w-auto lg:order-1" +
+            "lg:ml-auto lg:flex lg:w-auto lg:order-1" +
             (!navbarOpen ? " hidden" : " flex")
           }
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:my-auto">
+          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 md:my-auto">
             {links.map((link, i) => (
               <li key={i}>
                 <Link
                   to={link.to}
                   smooth
                   duration={500}
-                  className="block py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  offset={link.to != "home" ? -50 : 0}
+                  className="block text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   {link.title}
                 </Link>
               </li>
             ))}
-            <li>
+            <li className="md:ml-auto md:mt-2 sm:mr-4 lg:my-auto">
               <DarkModeSwitcher setDarkMode={setDarkMode} darkMode={darkMode} />
             </li>
           </ul>
