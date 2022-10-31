@@ -14,7 +14,7 @@ const Hero = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-lg font-bold text-center text-white rounded-lg bg-cyan-600 hover:bg-cyan-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            className="inline-flex items-center justify-center px-5 py-3 mr-3 text-lg font-bold text-center text-white rounded-lg bg-sky-600 hover:bg-sky-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
           >
             Projects
             <svg

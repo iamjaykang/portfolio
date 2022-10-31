@@ -20,13 +20,13 @@ const Header = ({ setDarkMode, darkMode }) => {
       to: "tools",
     },
     {
+      title: "Contact",
+      to: "contact",
+    },
+    {
       title: "Resume",
       to: pdf,
       download: true,
-    },
-    {
-      title: "Contact",
-      to: "contact",
     },
   ];
 
@@ -35,7 +35,7 @@ const Header = ({ setDarkMode, darkMode }) => {
       <div className="flex mx-auto max-w-screen-xl">
         <div className="items-start">
           <a href="/" className="flex items-center">
-            <span className="self-center text-3xl hover:text-cyan-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
+            <span className="self-center text-3xl hover:text-sky-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
               Jay.Kang
             </span>
           </a>
@@ -89,14 +89,14 @@ const Header = ({ setDarkMode, darkMode }) => {
                     duration={500}
                     download={link.download && link.download}
                     offset={link.to != "home" ? -50 : 0}
-                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                   >
                     {link.title}
                   </Link>
                 ) : (
                   <a
                     href={link.to}
-                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                     download={link.download}
                     target="_blank"
                     rel="noreferrer"

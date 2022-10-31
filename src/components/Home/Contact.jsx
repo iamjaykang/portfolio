@@ -8,11 +8,11 @@ const Contact = () => {
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="mb-16 text-5xl tracking-tight font-bold text-cyan-600 dark:text-sky-700">
+          <h2 className="mb-16 text-5xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
             Contact
           </h2>
         </div>
-        <div className="flex text-white dark:text-gray-500">
+        <div className="flex flex-col lg:flex-row gap-8 lg:flex:row text-white dark:text-gray-500">
           <div className="flex-1">
             <h3 className="text-5xl mb-6 text-black dark:text-white font-bold">
               Get in touch!
