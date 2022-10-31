@@ -15,6 +15,7 @@ const Projects2 = () => {
         "Tailwind CSS",
         "JWT",
         "Node Mailer",
+        "Joi",
         "Heroku",
       ],
       live: "https://crudcrm-ticket-system.herokuapp.com/",
@@ -63,14 +64,13 @@ const Projects2 = () => {
     },
   ];
   return (
-    <section name="projects" className="bg-white dark:bg-gray-900 relative">
+    <section name="projects" className="bg-white dark:bg-neutral-900 relative">
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="mb-8 text-5xl tracking-tight font-bold text-cyan-600 dark:text-white">
+          <h2 className="mb-16 text-5xl tracking-tight font-bold text-cyan-600 dark:text-sky-700">
             Projects
           </h2>
           {projects.map((project, i) => (
-            // console.log(project[0]);
             <div className="mb-10">
               {/* <div>
                 <h3 className="mb-4 font-bold text-3xl text-gray-900 dark:text-white">
@@ -82,19 +82,19 @@ const Projects2 = () => {
               </div>
               <div>
                 <h4 className="my-4 font-bold text-3xl">Tech Stack</h4>
-                <div className="my-4 flex-wrap flex justify-items-start gap-6">
+                <div className="my-4 flex-wrap flex justify-items-start gap-3">
                   {project.stacks &&
                     project.stacks.map((stack) => (
-                      <div className="text-center text-xl py-[0.1rem] px-4 bg-black text-white dark:bg-white dark:text-black rounded-sm text-bold">{stack}</div>
+                      <div className="text-center text-xl py-[0.1rem] px-4 bg-black text-white dark:bg-white dark:text-black rounded-sm font-bold">{stack}</div>
                     ))}
                 </div>
-                <h4 className="mb-4 font-bold text-3xl">See it in action</h4>
+                <h4 className="mb-4 font-bold text-3xl">{project.live ? "See it in action": "See the code"}</h4>
               </div>
               <div className="flex gap-6">
                 {project.live && (
                   <a
                     href={project.live}
-                    className="inline-flex text-xl items-center font-bold text-primary-600 hover:text-cyan-600 dark:text-primary-500 dark:hover:text-primary-700"
+                    className="inline-flex text-xl items-center font-bold text-primary-600 hover:text-cyan-600 hover:dark:text-sky-700 dark:text-primary-500 dark:hover:text-primary-700"
                     target='_blank'
                   >
                     Live
@@ -102,7 +102,7 @@ const Projects2 = () => {
                 )}
                 <a
                   href={project.code}
-                  className="inline-flex text-xl items-center font-bold text-primary-600 hover:text-cyan-600 dark:text-primary-500 dark:hover:text-primary-700"
+                  className="inline-flex text-xl items-center font-bold text-primary-600 hover:text-cyan-600 hover:dark:text-sky-700 dark:text-primary-500 dark:hover:text-primary-700"
                   target='_blank'
                 >
                   Code

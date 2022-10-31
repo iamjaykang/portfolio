@@ -15,8 +15,8 @@ const Header = ({ setDarkMode, darkMode }) => {
       to: "projects",
     },
     {
-      title: "Languages and Tools",
-      to: "languages-and-tools",
+      title: "Tools",
+      to: "tools",
     },
     {
       title: "Resume",
@@ -29,11 +29,11 @@ const Header = ({ setDarkMode, darkMode }) => {
   ];
 
   return (
-    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+    <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-neutral-900">
       <div className="flex mx-auto max-w-screen-xl">
         <div className="items-start">
           <a href="/" className="flex items-center">
-            <span className="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-3xl hover:text-cyan-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
               Jay.Kang
             </span>
           </a>
@@ -77,7 +77,7 @@ const Header = ({ setDarkMode, darkMode }) => {
           }
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 md:my-auto">
+          <ul className="flex flex-col mt-4 text-lg font-medium lg:flex-row lg:space-x-8 md:my-auto">
             {links.map((link, i) => (
               <li key={i}>
                 <Link
@@ -85,7 +85,7 @@ const Header = ({ setDarkMode, darkMode }) => {
                   smooth
                   duration={500}
                   offset={link.to != "home" ? -50 : 0}
-                  className="block text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                  className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-cyan-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   {link.title}
                 </Link>
