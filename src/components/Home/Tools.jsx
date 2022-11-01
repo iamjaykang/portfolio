@@ -35,7 +35,7 @@ const Tools = () => {
         </div>
         <div className="lg:ml-28">
           <p className="text-xl lg:text-3xl my-8 text-black dark:text-gray-400">
-            Here are some of my favorite tools right now
+            Here are some of my favourite tools right now
           </p>
         </div>
         {tools &&
