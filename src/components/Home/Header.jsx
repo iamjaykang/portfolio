@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import DarkModeSwitcher from "./DarkModeSwitcher";
 import pdf from "../../assets/documents/Resume-Jay-Kang.pdf";
+import MobileNavbar from "./MobileNavbar";
+import NavBar from "./NavBar";
 
 const Header = ({ setDarkMode, darkMode }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -35,8 +37,11 @@ const Header = ({ setDarkMode, darkMode }) => {
       <div className="flex mx-auto max-w-screen-xl">
         <div className="items-start">
           <a href="/" className="flex items-center">
-            <span className="self-center text-3xl hover:text-sky-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
+            <span className="hidden lg:block self-center text-3xl hover:text-sky-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
               Jay.Kang
+            </span>
+            <span className="lg:hidden self-center text-3xl hover:text-sky-600 font-semibold whitespace-nowrap dark:text-white hover:dark:text-sky-700">
+              J.K
             </span>
           </a>
         </div>
@@ -81,46 +86,19 @@ const Header = ({ setDarkMode, darkMode }) => {
           }
           id="mobile-menu-2"
         >
-          <ul
-            className={
-              "flex flex-col text-lg font-medium lg:flex-row lg:space-x-8 md:my-auto" +
-              (!navbarOpen
-                ? ""
-                : " bg-white dark:bg-neutral-900 w-full items-end h-full justify-end")
-            }
-          >
-            {links.map((link, i) => (
-              <li key={i}>
-                {link.title != "Resume" ? (
-                  <Link
-                    to={link.to}
-                    smooth
-                    duration={500}
-                    download={link.download && link.download}
-                    offset={link.to != "home" ? -50 : 0}
-                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                    onClick={() => setNavbarOpen(!navbarOpen)}
-                  >
-                    {link.title}
-                  </Link>
-                ) : (
-                  <a
-                    href={link.to}
-                    className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
-                    download={link.download}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={() => setNavbarOpen(!navbarOpen)}
-                  >
-                    {link.title}
-                  </a>
-                )}
-              </li>
-            ))}
-            <li className="md:ml-auto md:mt-2 sm:mr-4 lg:my-auto mb-8 mr-4 lg:mr-0 lg:mb-0">
-              <DarkModeSwitcher setDarkMode={setDarkMode} darkMode={darkMode} />
-            </li>
-          </ul>
+          <NavBar
+            links={links}
+            navbarOpen={navbarOpen}
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+          />
+          <MobileNavbar
+            links={links}
+            navbarOpen={navbarOpen}
+            setNavbarOpen={setNavbarOpen}
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+          />
         </div>
       </div>
     </nav>
