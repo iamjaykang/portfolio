@@ -43,7 +43,7 @@ const Header = ({ setDarkMode, darkMode }) => {
         <div className="flex items-center ml-auto lg:order-2 lg:hidden">
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex z-50 items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <svg
@@ -75,11 +75,20 @@ const Header = ({ setDarkMode, darkMode }) => {
         <div
           className={
             "lg:ml-auto lg:flex lg:w-auto lg:order-1" +
-            (!navbarOpen ? " hidden" : " flex")
+            (!navbarOpen
+              ? " hidden"
+              : "bg-white dark:bg-neutral-900 w-full flex absolute opacity-80 right-0 h-screen")
           }
           id="mobile-menu-2"
         >
-          <ul className="flex flex-col mt-4 text-lg font-medium lg:flex-row lg:space-x-8 md:my-auto">
+          <ul
+            className={
+              "flex flex-col text-lg font-medium lg:flex-row lg:space-x-8 md:my-auto" +
+              (!navbarOpen
+                ? ""
+                : " bg-white dark:bg-neutral-900 w-full items-end h-full justify-end")
+            }
+          >
             {links.map((link, i) => (
               <li key={i}>
                 {link.title != "Resume" ? (
@@ -90,6 +99,7 @@ const Header = ({ setDarkMode, darkMode }) => {
                     download={link.download && link.download}
                     offset={link.to != "home" ? -50 : 0}
                     className="block font-bold text-right py-2 pr-4 pl-3 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    onClick={() => setNavbarOpen(!navbarOpen)}
                   >
                     {link.title}
                   </Link>
@@ -100,13 +110,14 @@ const Header = ({ setDarkMode, darkMode }) => {
                     download={link.download}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={() => setNavbarOpen(!navbarOpen)}
                   >
                     {link.title}
                   </a>
                 )}
               </li>
             ))}
-            <li className="md:ml-auto md:mt-2 sm:mr-4 lg:my-auto">
+            <li className="md:ml-auto md:mt-2 sm:mr-4 lg:my-auto mb-8 mr-4 lg:mr-0 lg:mb-0">
               <DarkModeSwitcher setDarkMode={setDarkMode} darkMode={darkMode} />
             </li>
           </ul>

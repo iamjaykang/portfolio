@@ -8,16 +8,16 @@ const Contact = () => {
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
-          <h2 className="mb-16 text-5xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
+          <h2 className="mb-16 text-3xl lg:text-5xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
             Contact
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row gap-8 lg:flex:row text-white dark:text-gray-500">
-          <div className="flex-1">
-            <h3 className="text-5xl mb-6 text-black dark:text-white font-bold">
+          <div className="lg:ml-8 flex-1">
+            <h3 className="text-3xl lg:text-5xl mb-6 text-black dark:text-white font-bold">
               Get in touch!
             </h3>
-            <p className="text-black dark:text-white font-bold text-3xl">
+            <p className="text-black dark:text-white font-bold text-xl lg:text-3xl">
               Have any questions?
               <br /> Shoot me an email
             </p>
@@ -26,7 +26,7 @@ const Contact = () => {
             <form
               action="https://getform.io/f/5642df68-83dc-4dfe-87fb-07d12f238226"
               method="POST"
-              className="flex flex-col gap-6 text-2xl font-bold border-black dark:border-white border p-14"
+              className="flex flex-col gap-6 text-lg lg:text-2xl font-bold border-black dark:border-white border lg:p-14 p-6"
             >
               <input
                 type="text"
