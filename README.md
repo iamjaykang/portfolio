@@ -12,4 +12,4 @@ link:https://jaykang.info/
 
 ## Mobile View
 
-<a href="https://ibb.co/g4tgNgS"><img src="https://i.ibb.co/fDr0f0k/Screenshot-2022-11-02-at-8-15-00-PM.png" alt="mobile-view" border="0"></a>
+<a href="https://ibb.co/XF9KtC9"><img src="https://i.ibb.co/RQ1scD1/Screenshot-2022-11-02-at-8-21-33-PM.png" width="300px" alt="Screenshot-2022-11-02-at-8-21-33-PM" border="0"></a>
