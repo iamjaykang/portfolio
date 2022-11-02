@@ -36,7 +36,7 @@ const Projects = () => {
       name: "Turners Insurance App",
       img: "https://camo.githubusercontent.com/d83f03df67619d8b88bea75c1a7ffb746a518e45ad3af066de801f0c68ce4093/68747470733a2f2f692e6962622e636f2f3432375257566e2f53637265656e2d53686f742d323032322d30392d30382d61742d392d33322d34342d504d2e706e67",
       description:
-        "First project where I was able to work together with UX designers, we practiced the agile methodology by having daily stand ups at Mission Ready HQ, Azure DevOps was used as our CI/CD pipeline at the time of development, but has been shut down due to lack of credit hence the app being on Netlify.",
+        "First project where I was able to work together with UX designers, we practiced the agile methodology by having daily stand ups at Mission Ready HQ, Azure DevOps was used as our CI/CD pipeline at the time of development.",
       stacks: [
         "TypeScript",
         "Azure",
