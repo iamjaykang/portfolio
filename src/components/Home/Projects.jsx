@@ -71,17 +71,17 @@ const Projects = () => {
                 <img className="w-full" src={project.img} />
                 <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in duration-300">
                   <h2
-                    className={`"mx-auto text-2xl lg:text-4xl ${
-                      project.name === "Food Recipe App" ? "top-28 lg:top-72" : "top-14 lg:top-56"
+                    className={`"mx-auto text-base font-extrabold sm:text-2xl lg:text-4xl ${
+                      project.name === "Food Recipe App" ? "top-16 sm:top-36 lg:top-72" : "top-4 sm:top-20 lg:top-56"
                     } absolute text-transparent group-hover:text-white font-bold"`}
                   >
                     {project.name}
                   </h2>
                   <p
-                    className={`"text-xl lg:text-2xl  px-6 ${
+                    className={`" text-sm sm:text-xl lg:text-2xl  px-6 ${
                       project.name === "Food Recipe App"
-                        ? "top-[9.5rem] lg:top-[22rem]"
-                        : "top-24 lg:top-[17rem]"
+                        ? "top-24 sm:top-48 lg:top-[22rem]"
+                        : "top-12 sm:top-32 lg:top-[17rem]"
                     } absolute text-transparent group-hover:text-white font-bold text-center"`}
                   >
                     {project.description}
