@@ -66,7 +66,7 @@ const Projects = () => {
             Projects
           </h2>
           {projects.map((project, i) => (
-            <div key={i} className="ml-8 mb-20">
+            <div key={i} className="mx-auto lg:ml-8 mb-20">
               <div className="group relative">
                 <img className="w-full" src={project.img} />
                 <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in duration-300">
