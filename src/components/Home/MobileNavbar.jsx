@@ -48,7 +48,7 @@ const MobileNavbar = ({
           )}
         </li>
       ))}
-      <li className="md:ml-auto md:mt-2 sm:mr-4 lg:my-auto mb-8 mr-4 lg:mr-0 lg:mb-0">
+      <li className="my-2 md:ml-auto md:mt-2 sm:mr-4 lg:my-auto mb-8 mr-4 lg:mr-0 lg:mb-0">
         <DarkModeSwitcher setDarkMode={setDarkMode} darkMode={darkMode} />
       </li>
     </ul>
