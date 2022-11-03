@@ -72,7 +72,9 @@ const Projects = () => {
                 <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in duration-300">
                   <h2
                     className={`"mx-auto text-base font-extrabold sm:text-2xl lg:text-4xl ${
-                      project.name === "Food Recipe App" ? "top-16 sm:top-36 md:top-60 lg:top-72" : "top-4 sm:top-20 md:top-40 lg:top-56"
+                      project.name === "Food Recipe App"
+                        ? "top-16 xs:top-36 sm:top-36 md:top-60 lg:top-72"
+                        : "top-8 xs:top-24 sm:top-20 md:top-40 lg:top-56"
                     } absolute text-transparent group-hover:text-white font-bold"`}
                   >
                     {project.name}
@@ -80,8 +82,8 @@ const Projects = () => {
                   <p
                     className={`" text-sm sm:text-xl lg:text-2xl  px-6 ${
                       project.name === "Food Recipe App"
-                        ? "top-24 sm:top-48 md:top-72 lg:top-[22rem]"
-                        : "top-12 sm:top-32 md:top-52 lg:top-[17rem]"
+                        ? "top-24 xs:top-44 sm:top-48 md:top-72 lg:top-[22rem]"
+                        : "top-16 xs:top-32 sm:top-32 md:top-52 lg:top-[17rem]"
                     } absolute text-transparent group-hover:text-white font-bold text-center"`}
                   >
                     {project.description}
