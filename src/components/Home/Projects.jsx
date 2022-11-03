@@ -69,7 +69,7 @@ const Projects = () => {
             <div key={i} className="mx-auto lg:ml-8 mb-20">
               <div className="group relative">
                 <img className="w-full" src={project.img} />
-                <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in duration-300">
+                <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in-out duration-300">
                   <h2
                     className={`"mx-auto text-base font-extrabold sm:text-2xl lg:text-4xl ${
                       project.name === "Food Recipe App"
@@ -83,7 +83,7 @@ const Projects = () => {
                     className={`" text-sm sm:text-xl lg:text-2xl  px-6 ${
                       project.name === "Food Recipe App"
                         ? "top-24 xs:top-44 sm:top-48 md:top-72 lg:top-[22rem]"
-                        : "top-16 xs:top-32 sm:top-32 md:top-52 lg:top-[17rem]"
+                        : "top-16 xs:top-32 sm:top-32 md:top-52 lg:top-[17.5rem]"
                     } absolute text-transparent group-hover:text-white font-bold text-center"`}
                   >
                     {project.description}
