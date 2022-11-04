@@ -33,8 +33,9 @@ const About = () => {
               </h4>
               <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
                 During the process of running our business, I experienced a
-                little bit of Liquid and Jquery and a lot of software which was
-                involved in acquiring stock, which ultimately lead me in to
+                little bit of Liquid and Jquery in managing our shopify website
+                and a lot of software which was involved in acquiring stock
+                which was very interesting to me, which ultimately lead me in to
                 pursuing the software development pathway.
               </p>
               <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
@@ -45,9 +46,9 @@ const About = () => {
               </h4>
               <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
                 In the middle of 2022, I went on to join Mission Ready HQ after
-                self teaching myself to code from the start of the year, I found
-                to enjoy the journey as I got to experience working with other
-                developers and UX designers at a very fast pace.
+                I began self-teaching myself to code at the start of the year. I
+                enjoyed the journey as I got to experience working with other
+                developers and UX designers and learn new frameworks and tools.
               </p>
             </div>
           </div>
