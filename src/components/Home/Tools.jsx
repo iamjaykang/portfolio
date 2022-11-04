@@ -3,21 +3,25 @@ import React from "react";
 const Tools = () => {
   const tools = [
     {
-      backend: ["NodeJS", "ExpressJS", "MongoDB", "MySQL", "Redis"],
+      backend: ["Node", "Express", "MongoDB", "MySQL", "Redis"],
       frontend: [
-        "ReactJS",
+        "React",
         "Redux",
         "Tailwind CSS",
         "HTML",
         "CSS",
         "Material UI",
+        "JavaScript",
       ],
       other: [
-        "JavaScript",
         "TypeScript",
         "Azure DevOps",
         "Machine Learning",
         "Docker",
+        "Agile Methodology",
+        "Kanban",
+        "Github",
+        "Linear"
       ],
     },
   ];

@@ -22,6 +22,10 @@ const Header = ({ setDarkMode, darkMode }) => {
       to: "tools",
     },
     {
+      title: "About",
+      to: "about",
+    },
+    {
       title: "Contact",
       to: "contact",
     },

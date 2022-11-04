@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import About from "../../components/Home/About";
 import Contact from "../../components/Home/Contact";
 import Footer from "../../components/Home/Footer";
 import Header from "../../components/Home/Header";
@@ -19,6 +20,7 @@ const Home = ({setDarkMode,darkMode}) => {
         <Hero />
         <Projects />
         <Tools />
+        <About />
         <Contact />
       </main>
       <SideNavBar />
