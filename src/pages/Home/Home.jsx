@@ -16,7 +16,7 @@ const Home = ({setDarkMode,darkMode}) => {
       <header className="sticky top-0 z-50">
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       </header>
-      <main className="">
+      <main className="min-h-screen">
         <Hero />
         <Projects />
         <Tools />
@@ -24,7 +24,7 @@ const Home = ({setDarkMode,darkMode}) => {
         <Contact />
       </main>
       <SideNavBar />
-      <footer className="p-4 bg-white text-center shadow md:flex items-center justify-center md:p-6 dark:bg-neutral-900">
+      <footer className="p-4 bg-white mt-auto w-full text-center md:p-6 dark:bg-neutral-900">
       <Footer />
       </footer>
     </div>

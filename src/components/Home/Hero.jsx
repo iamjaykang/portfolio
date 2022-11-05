@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section name="home" className="bg-white dark:bg-neutral-900">
       <div className="grid max-w-screen-xl md:h-screen px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16">
-        <div className=" max-w-5xl mr-auto place-self-center ">
+        <div className="flex flex-col items-start mr-auto place-self-center ">
           <h1 className="max-w-2xl mb-10 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
             Hello, I'm Jay 👋
           </h1>

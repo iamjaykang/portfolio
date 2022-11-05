@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       name="about"
-      className="bg-white h-screen lg:flex lg:justify-center lg:items-center lg:h-screen dark:bg-neutral-900 relative"
+      className="bg-white lg:flex lg:justify-center lg:items-center lg:h-[100vh] dark:bg-neutral-900"
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
