@@ -16,12 +16,12 @@ const About = () => {
           <div className="lg:ml-8">
             <div className="mb-6">
               <p className="text-black dark:text-white text-xl lg:text-3xl">
-                I am a Full Stack Developer that has been involved in the
-                sneaker business which I co-founded for all of my professional
-                career, I jumped in to the field of progamming at the start of
-                2022 to change up my career pathway and challenge myself. Since
-                the start of 2022, I found myself creating my own projects and
-                collaborating with others which I found to enjoy.
+                I am a full-stack developer who has been in the sneaker
+                business, which I co-founded, for all of my professional career.
+                I jumped into the field of programming at the start of 2022, and
+                since the start of 2022, I have created my own projects and
+                collaborated with others through Mission Ready HQ, which I found
+                to be enjoyable.
               </p>
             </div>
             <div>
@@ -35,8 +35,8 @@ const About = () => {
                 During the process of running our business, I experienced a
                 little bit of Liquid and Jquery in managing our shopify website
                 and a lot of software which was involved in acquiring stock
-                which was very interesting to me, which ultimately lead me in to
-                pursuing the software development pathway.
+                which was very interesting to me, this ultimately lead me in to
+                pursuing software development.
               </p>
               <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
                 Mission Ready HQ
