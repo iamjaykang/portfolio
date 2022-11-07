@@ -21,7 +21,7 @@ const Tools = () => {
         "Agile Methodology",
         "Kanban",
         "Github",
-        "Linear"
+        "Linear",
       ],
     },
   ];
@@ -37,61 +37,63 @@ const Tools = () => {
             Tools
           </h2>
         </div>
-        <div className="lg:ml-28 2xl:ml-0">
-          <p className="text-xl lg:text-3xl my-8 text-black dark:text-gray-400">
-            Here are some of my favourite tools right now
-          </p>
+        <div className="lg:ml-8">
+          <div className="">
+            <p className="text-xl lg:text-3xl my-8 text-black dark:text-gray-400">
+              Here are some of my favourite tools right now
+            </p>
+          </div>
+          {tools &&
+            tools.map((tool, i) => (
+              <div className="flex flex-col lg:gap-80 lg:flex-row justify-around">
+                <div>
+                  <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 font-bold dark:text-sky-700">
+                    Back-End Technology
+                  </h3>
+                  <div>
+                    {tool.backend &&
+                      tool.backend.map((item) => (
+                        <ul>
+                          <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
+                            {item}
+                          </li>
+                        </ul>
+                      ))}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 font-bold dark:text-sky-700">
+                    Front-End Technology
+                  </h3>
+                  <div>
+                    {tool.frontend &&
+                      tool.frontend.map((item) => (
+                        <ul>
+                          <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
+                            {item}
+                          </li>
+                        </ul>
+                      ))}
+                  </div>
+                </div>
+                <div>
+                  <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 dark:text-sky-700 font-bold">
+                    Other
+                  </h3>
+                  <div>
+                    {tool.other &&
+                      tool.other.map((item) => (
+                        <ul>
+                          <li className="mb-4 text-base lg:text-xl font-bold dark:text-white">
+                            {item}
+                          </li>
+                        </ul>
+                      ))}
+                  </div>
+                </div>
+              </div>
+            ))}
         </div>
-        {tools &&
-          tools.map((tool, i) => (
-            <div className="flex flex-col 2xl:gap-80 lg:flex-row justify-around">
-              <div>
-                <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 font-bold dark:text-sky-700">
-                  Back-End Technology
-                </h3>
-                <div>
-                  {tool.backend &&
-                    tool.backend.map((item) => (
-                      <ul>
-                        <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
-                          {item}
-                        </li>
-                      </ul>
-                    ))}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 font-bold dark:text-sky-700">
-                  Front-End Technology
-                </h3>
-                <div>
-                  {tool.frontend &&
-                    tool.frontend.map((item) => (
-                      <ul>
-                        <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
-                          {item}
-                        </li>
-                      </ul>
-                    ))}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 dark:text-sky-700 font-bold">
-                  Other
-                </h3>
-                <div>
-                  {tool.other &&
-                    tool.other.map((item) => (
-                      <ul>
-                        <li className="mb-4 text-base lg:text-xl font-bold dark:text-white">
-                          {item}
-                        </li>
-                      </ul>
-                    ))}
-                </div>
-              </div>
-            </div>
-          ))}
       </div>
     </section>
   );
