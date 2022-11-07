@@ -29,7 +29,7 @@ const Tools = () => {
   return (
     <section
       name="tools"
-      className="bg-white 2xl:flex 2xl:justify-center 2xl:items-center lg:h-screen dark:bg-neutral-900 relative"
+      className="bg-white lg:h-screen dark:bg-neutral-900 relative"
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
@@ -37,7 +37,7 @@ const Tools = () => {
             Tools
           </h2>
         </div>
-        <div className="lg:ml-8">
+        <div className="max-w-screen-lg mx-auto">
           <div className="">
             <p className="text-xl lg:text-3xl my-8 text-black dark:text-gray-400">
               Here are some of my favourite tools right now
