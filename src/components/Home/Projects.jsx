@@ -6,7 +6,7 @@ const Projects = () => {
       name: "CRM Ticket System",
       img: "https://i.ibb.co/xJyFVPS/CRM-full-stack-app2.png",
       description:
-        "A CRUD CRM Ticket Application built with the MERN stack, with features like dashboard, user validation and sign in, sign out, ticket query and the ability to add and update existing and new tickets. this app has been hosted on free tier Heroku service.",
+        "A CRUD CRM Ticket Application built with the MERN stack, with features like Admin & Client portals, dashboard, user validation and sign in, sign out, ticket query and the ability to add and update existing and new tickets. this app has been hosted on free tier Heroku service.",
       stacks: [
         "MongoDB",
         "Express",
