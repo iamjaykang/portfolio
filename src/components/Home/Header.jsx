@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import DarkModeSwitcher from "./DarkModeSwitcher";
-import pdf from "../../assets/documents/Resume-Jay-Kang.pdf";
+import pdf from "../../assets/documents/jayKangCv.pdf";
 import MobileNavbar from "./MobileNavbar";
 import NavBar from "./NavBar";
 
