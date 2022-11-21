@@ -20,7 +20,7 @@ const MobileNavbar = ({
     >
       {links.map((link, i) => (
         <li key={i}>
-          {link.title != "Resume" ? (
+          {link.title !== "Resume" ? (
             <Link
               to={link.to}
               smooth

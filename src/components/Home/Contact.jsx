@@ -25,10 +25,10 @@ const Contact = () => {
             <p className="text-black dark:text-white lg:hidden font-bold text-xl lg:text-3xl mt-6">
               Other socials
               <div className="flex gap-4 mt-2">
-                <a href="https://www.linkedin.com/in/jay-kang-b5284a228/" target="_blank">
+                <a href="https://www.linkedin.com/in/jay-kang-b5284a228/" target="_blank" rel="noreferrer">
                   <FaLinkedin size={35} />
                 </a>
-                <a href="https://github.com/jaykang95" target="_blank">
+                <a href="https://github.com/jaykang95" target="_blank" rel="noreferrer">
                   <FaGithub size={35} />
                 </a>
               </div>

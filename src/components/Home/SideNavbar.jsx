@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import pdf from '../../assets/documents/Resume-Jay-Kang.pdf';
+import pdf from '../../assets/documents/jayKangCv.pdf';
 
 const SideNavBar = () => {
   const links = [

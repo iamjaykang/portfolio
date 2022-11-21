@@ -19,13 +19,13 @@ const NavBar = ({
   >
     {links.map((link, i) => (
       <li key={i}>
-        {link.title != "Resume" ? (
+        {link.title !== "Resume" ? (
           <Link
             to={link.to}
             smooth
             duration={500}
             download={link.download && link.download}
-            offset={link.to != "home" ? -50 : 0}
+            offset={link.to !== "home" ? -50 : 0}
             className="block w-full font-bold text-right py-2 px-6 mx-auto text-black hover:text-sky-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent cursor-pointer lg:border-0 lg:p-0 dark:text-white lg:dark:hover:text-sky-700 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
           >
             {link.title}
