@@ -17,27 +17,21 @@ const About = () => {
             <div className="mx-auto">
               <div className="mb-6">
                 <p className="text-black dark:text-white text-xl lg:text-3xl">
-                  I am a full-stack developer who has been in the sneaker
-                  business, which I co-founded, for all of my professional
-                  career. I jumped into the field of programming at the start of
-                  2022, and since the start of 2022, I have created my own
+                  I am a full-stack developer that has been working in the sneaker industry, in which I co-founded. I jumped into the field of programming at the start of
+                  2022, where I have since created my own
                   projects and collaborated with others through Mission Ready
                   HQ, which I found to be enjoyable.
                 </p>
               </div>
               <div>
-                <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
-                  Prior Store
+              <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
+                  Revived Design
                 </h3>
                 <h4 className="mb-2 text-black dark:text-white text-lg font-bold lg:text-xl">
-                  2016-2022
+                  2022
                 </h4>
                 <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-                  During the process of running our business, I experienced a
-                  little bit of Liquid and Jquery in managing our shopify
-                  website and a lot of software which was involved in acquiring
-                  stock which was very interesting to me, this ultimately lead
-                  me in to pursuing software development.
+                  At the end of September, 2022. I went on to join Revived Design as an Intern Software Developer, where I learnt a new language (flutter) and got to hone my skills in testing and DevOps, even though there were challenges to begin with, I am glad to say that I overcame a lot of the obstacles by working closely with my mentor and owner.
                 </p>
                 <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
                   Mission Ready HQ
@@ -51,6 +45,19 @@ const About = () => {
                   year. I enjoyed the journey as I got to experience working
                   with other developers and UX designers and learn new
                   frameworks and tools.
+                </p>
+                <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
+                  Prior Store
+                </h3>
+                <h4 className="mb-2 text-black dark:text-white text-lg font-bold lg:text-xl">
+                  2016-2022
+                </h4>
+                <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
+                  During the process of running our business, I experienced a
+                  little bit of Liquid and Jquery in managing our shopify
+                  website and a lot of software which was involved in acquiring
+                  stock which was very interesting to me, this ultimately lead
+                  me in to pursuing software development.
                 </p>
               </div>
             </div>
