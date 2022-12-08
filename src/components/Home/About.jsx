@@ -17,10 +17,10 @@ const About = () => {
             <div className="mx-auto">
               <div className="mb-6">
                 <p className="text-black dark:text-white text-xl lg:text-3xl">
-                  I am a full-stack developer that has been working in the sneaker industry, in which I co-founded. I jumped into the field of programming at the start of
-                  2022, where I have since created my own
+                  I am a full-stack developer, I jumped into the field of programming at the start of
+                  2022, where I have since created personal
                   projects and collaborated with others through Mission Ready
-                  HQ, which I found to be enjoyable.
+                  HQ.
                 </p>
               </div>
               <div>
@@ -31,7 +31,7 @@ const About = () => {
                   2022
                 </h4>
                 <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-                  At the end of September, 2022. I went on to join Revived Design as an Intern Software Developer, where I learnt a new language (flutter) and got to hone my skills in testing and DevOps, even though there were challenges to begin with, I am glad to say that I overcame a lot of the obstacles by working closely with my mentor and owner.
+                  At the end of September, 2022. I went on to join Revived Design as an Intern Software Developer, where I learnt a new language (flutter) and got to hone my skills in testing and DevOps, even though there were challenges to begin with, I am glad to say that I overcame a lot of the obstacles by working closely with my mentor and through researching on possible solutions.
                 </p>
                 <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
                   Mission Ready HQ
