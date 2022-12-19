@@ -6,8 +6,8 @@ const Projects = () => {
       name: "Revents App",
       img: "https://i.ibb.co/JjbRJfJ/dashboard.png",
       description:
-        "React TypeScript and .NET for the Backend. I utilised Semantic UI for theming and state management through MobX and use of PostgresQL for the database. Features like live chats with SignalR, and manage and create events and social media capability with the ability to follow other users",
-      stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io"],
+        "React TypeScript and .NET for the Backend. I utilised Semantic UI for theming and state management through MobX and use of PostgresQL for the database. Features like live chats with SignalR, and manage and create events and social media capability with the ability to follow other users dockerised and deployed on fly.io through CI/CD pipeline through Github Actions",
+      stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io", "Github Actions"],
       live: "https://revents.fly.dev",
       code: "https://github.com/jaykang95/Revents-App",
     },
