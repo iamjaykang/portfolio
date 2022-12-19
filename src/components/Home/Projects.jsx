@@ -7,7 +7,7 @@ const Projects = () => {
       img: "https://i.ibb.co/JjbRJfJ/dashboard.png",
       description:
         "React TypeScript and .NET for the Backend. I utilised Semantic UI for theming and state management through MobX and use of PostgresQL for the database. Features like live chats with SignalR, and manage and create events and social media capability with the ability to follow other users dockerised and deployed on fly.io through CI/CD pipeline through Github Actions",
-      stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io", "Github Actions"],
+      stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io", "Github Actions", "MediatR"],
       live: "https://revents.fly.dev",
       code: "https://github.com/jaykang95/Revents-App",
     },
@@ -15,7 +15,7 @@ const Projects = () => {
       name: "CRM Ticket System",
       img: "https://i.ibb.co/xJyFVPS/CRM-full-stack-app2.png",
       description:
-        "A CRUD CRM Ticket Application built with the MERN stack, with features like Admin & Client portals, dashboard, user validation and sign in, sign out, ticket query and the ability to add and update existing and new tickets. this app has been hosted on free tier Render.com.",
+        "A CRUD CRM Ticket Application built with the MERN stack, with features like Admin & Client portals, dashboard, user validation and sign in, sign out, ticket query and the ability to add and update existing and new tickets. this app has been hosted on free tier on Render.com, so it could take a bit of time to load up",
       stacks: [
         "MongoDB",
         "Express",
