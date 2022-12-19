@@ -3,6 +3,15 @@ import React from "react";
 const Projects = () => {
   const projects = [
     {
+      name: "Revents App",
+      img: "https://i.ibb.co/JjbRJfJ/dashboard.png",
+      description:
+        "React TypeScript and .NET for the Backend. I utilised Semantic UI for theming and state management through MobX and use of PostgresQL for the database. Features like live chats with SignalR, and manage and create events and social media capability with the ability to follow other users",
+      stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io"],
+      live: "https://revents.fly.dev",
+      code: "https://github.com/jaykang95/Revents-App",
+    },
+    {
       name: "CRM Ticket System",
       img: "https://i.ibb.co/xJyFVPS/CRM-full-stack-app2.png",
       description:
@@ -47,16 +56,7 @@ const Projects = () => {
       ],
       live: "https://timely-heliotrope-4a4175.netlify.app/",
       code: "https://github.com/jaykang95/turners-insurance",
-    },
-    {
-      name: "Food Recipe App",
-      img: "https://camo.githubusercontent.com/8fa3e5383cdba4d1926897c7c854703ee3f6bfb37e0e3da01254fa1fdab66985/68747470733a2f2f692e6962622e636f2f48544b354337382f53637265656e2d53686f742d323032322d31302d30342d61742d392d31392d30342d504d2e706e67",
-      description:
-        "Simple recipe app I created as I couldn't think of what to cook, the feautures include search functionality and category selection, and most importantly, get 10 random meal recipes function",
-      stacks: ["React", "Tailwind CSS", "Axios", "Netlify"],
-      live: "https://dainty-dolphin-7819d1.netlify.app",
-      code: "https://github.com/jaykang95/recipe-app",
-    },
+    }
   ];
   return (
     <section name="projects" className="bg-white dark:bg-neutral-900 relative">
@@ -68,31 +68,21 @@ const Projects = () => {
           <div className="max-w-screen-lg mx-auto">
             {projects.map((project, i) => (
               <div key={i} className="mb-20">
-                <div className="group relative">
-                  <img
-                    className="w-full"
-                    src={project.img}
-                    alt={project.name}
-                  />
-                  <div className="absolute flex flex-col justify-center items-center text-center top-0 left-0 w-full h-0 bg-black opacity-40 hover:opacity-80 group-hover:h-full transition hover:ease-in-out duration-300">
-                    <h2
-                      className={`"mx-auto text-base font-extrabold sm:text-2xl lg:text-4xl ${
-                        project.name === "Food Recipe App"
-                          ? "top-16 xs:top-36 sm:top-36 md:top-60 lg:top-72"
-                          : "top-8 xs:top-24 sm:top-20 md:top-40 lg:top-56"
-                      } absolute text-transparent group-hover:text-white font-bold"`}
-                    >
-                      {project.name}
-                    </h2>
-                    <p
-                      className={`" text-sm sm:text-xl lg:text-2xl  px-6 ${
-                        project.name === "Food Recipe App"
-                          ? "top-24 xs:top-44 sm:top-48 md:top-72 lg:top-[22rem]"
-                          : "top-16 xs:top-32 sm:top-32 md:top-52 lg:top-[17.5rem]"
-                      } absolute text-transparent group-hover:text-white font-bold text-center"`}
-                    >
-                      {project.description}
-                    </p>
+                <div className="grid grid-rows-1 gap-6 w-full h-full">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                    <img
+                      className="object-cover w-full h-full"
+                      src={project.img}
+                      alt={project.name}
+                    />
+                    <div className="absolute opacity-0 duration-300 top-0 left-0 px-6 py-4 bg-black w-full h-full hover:opacity-80 flex justify-center items-center flex-col">
+                      <h2 className="mb-3 text-lg md:text-4xl font-semibold tracking-tight text-white">
+                        {project.name}
+                      </h2>
+                      <p className="leading-normal text-center text-base sm:text-3xl text-gray-100">
+                        {project.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div>
@@ -102,7 +92,10 @@ const Projects = () => {
                   <div className="my-6 flex-wrap flex justify-items-start gap-3">
                     {project.stacks &&
                       project.stacks.map((stack) => (
-                        <div className="text-center text-base lg:text-xl py-[0.1rem] px-4 bg-black text-white dark:bg-white dark:text-black rounded-sm font-bold">
+                        <div
+                          key={stack}
+                          className="text-center text-base lg:text-xl py-[0.1rem] px-4 bg-black text-white dark:bg-white dark:text-black rounded-sm font-bold"
+                        >
                           {stack}
                         </div>
                       ))}

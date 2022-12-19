@@ -3,7 +3,15 @@ import React from "react";
 const Tools = () => {
   const tools = [
     {
-      backend: ["Node", "Express", "MongoDB", "MySQL", "Redis"],
+      backend: [
+        ".Net",
+        "PostGresQL",
+        "Node",
+        "Express",
+        "MongoDB",
+        "MySQL",
+        "Redis",
+      ],
       frontend: [
         "React",
         "Redux",
@@ -45,20 +53,26 @@ const Tools = () => {
           </div>
           {tools &&
             tools.map((tool, i) => (
-              <div className="flex flex-col lg:gap-80 lg:flex-row justify-around">
+              <div
+                key={i}
+                className="flex flex-col lg:gap-80 lg:flex-row justify-around"
+              >
                 <div>
                   <h3 className="text-xl lg:text-3xl mb-4 text-sky-600 font-bold dark:text-sky-700">
                     Back-End Technology
                   </h3>
                   <div>
-                    {tool.backend &&
-                      tool.backend.map((item) => (
-                        <ul>
-                          <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
+                    <ul>
+                      {tool.backend &&
+                        tool.backend.map((item) => (
+                          <li
+                            key={item}
+                            className="mb-4 font-bold text-base lg:text-xl dark:text-white"
+                          >
                             {item}
                           </li>
-                        </ul>
-                      ))}
+                        ))}
+                    </ul>
                   </div>
                 </div>
                 <div>
@@ -66,14 +80,17 @@ const Tools = () => {
                     Front-End Technology
                   </h3>
                   <div>
-                    {tool.frontend &&
-                      tool.frontend.map((item) => (
-                        <ul>
-                          <li className="mb-4 font-bold text-base lg:text-xl dark:text-white">
+                    <ul>
+                      {tool.frontend &&
+                        tool.frontend.map((item) => (
+                          <li
+                            key={item}
+                            className="mb-4 font-bold text-base lg:text-xl dark:text-white"
+                          >
                             {item}
                           </li>
-                        </ul>
-                      ))}
+                        ))}
+                    </ul>
                   </div>
                 </div>
                 <div>
@@ -81,14 +98,17 @@ const Tools = () => {
                     Other
                   </h3>
                   <div>
-                    {tool.other &&
-                      tool.other.map((item) => (
-                        <ul>
-                          <li className="mb-4 text-base lg:text-xl font-bold dark:text-white">
+                    <ul>
+                      {tool.other &&
+                        tool.other.map((item) => (
+                          <li
+                            key={item}
+                            className="mb-4 text-base lg:text-xl font-bold dark:text-white"
+                          >
                             {item}
                           </li>
-                        </ul>
-                      ))}
+                        ))}
+                    </ul>
                   </div>
                 </div>
               </div>
