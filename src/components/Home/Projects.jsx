@@ -74,10 +74,10 @@ const Projects = () => {
                       alt={project.name}
                     />
                     <div className="absolute opacity-0 duration-300 top-0 left-0 px-6 py-4 bg-black w-full h-full hover:opacity-80 flex justify-center items-center flex-col">
-                      <h2 className="mb-3 text-lg md:text-4xl font-semibold tracking-tight text-white">
+                      <h2 className="mb-3 text-base xs:text-2xl md:text-4xl font-semibold tracking-tight text-white">
                         {project.name}
                       </h2>
-                      <p className="leading-normal text-center text-base sm:text-3xl text-gray-100">
+                      <p className="leading-normal text-center text-xs xs:text-xl md:text-3xl text-gray-100">
                         {project.description}
                       </p>
                     </div>
