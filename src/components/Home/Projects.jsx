@@ -29,7 +29,7 @@ const Projects = () => {
         "Joi",
         "Heroku",
       ],
-      live: "http://crudcrm-ticket.online",
+      live: "https://crudcrm-ticket.online",
       code: "https://github.com/jaykang95/crm-ticket-system",
     },
     {
@@ -42,20 +42,18 @@ const Projects = () => {
       code: "https://github.com/jaykang95/pbtech-project",
     },
     {
-      name: "Turners Insurance App",
-      img: "https://camo.githubusercontent.com/d83f03df67619d8b88bea75c1a7ffb746a518e45ad3af066de801f0c68ce4093/68747470733a2f2f692e6962622e636f2f3432375257566e2f53637265656e2d53686f742d323032322d30392d30382d61742d392d33322d34342d504d2e706e67",
+      name: "Portfolio Website",
+      img: "https://i.ibb.co/KcgP5Ms/Screenshot-2022-12-20-at-10-24-27-PM.png",
       description:
-        "First project where I was able to work together with UX designers, we practiced the agile methodology by having daily stand ups at Mission Ready HQ, Azure DevOps was used as our CI/CD pipeline at the time of development.",
+        "Solo project where I utilised React JS and Tailwind CSS to style the website, This website is hosted on Netlify on a custom domain , and some of the features include smooth scrolling to sections via the Navbar and dark & light themes with mobile responsiveness and desktop view",
       stacks: [
-        "TypeScript",
-        "Azure",
         "React",
-        "Azure DevOps",
-        "Docker",
+        "JavaScript",
+        "Netlify",
         "Tailwind CSS",
       ],
-      live: "https://timely-heliotrope-4a4175.netlify.app/",
-      code: "https://github.com/jaykang95/turners-insurance",
+      live: "https://jaykang.info",
+      code: "https://github.com/jaykang95/portfolio",
     }
   ];
   return (
