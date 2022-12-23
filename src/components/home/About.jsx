@@ -17,21 +17,27 @@ const About = () => {
             <div className="mx-auto">
               <div className="mb-6">
                 <p className="text-black dark:text-white text-xl lg:text-3xl">
-                  I am a full-stack developer, I jumped into the field of programming at the start of
-                  2022, where I have since created personal
-                  projects and collaborated with others through Mission Ready
-                  HQ.
+                  I am a full-stack developer, I jumped into the field of
+                  programming at the start of 2022, where I have since created
+                  personal projects and collaborated with others through Mission
+                  Ready HQ.
                 </p>
               </div>
               <div>
-              <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
+                <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
                   Revived Design
                 </h3>
                 <h4 className="mb-2 text-black dark:text-white text-lg font-bold lg:text-xl">
                   2022
                 </h4>
                 <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-                  At the end of September, 2022. I went on to join Revived Design as an Intern Software Developer, where I learnt a new language (flutter) and got to hone my skills in testing and DevOps, even though there were challenges to begin with, I am glad to say that I overcame a lot of the obstacles by working closely with my mentor and through researching on possible solutions.
+                  At the end of September, 2022. I went on to join Revived
+                  Design as an Intern Software Developer, where I learnt a new
+                  language (flutter) and got to hone my skills in testing and
+                  DevOps, even though there were challenges to begin with, I am
+                  glad to say that I overcame a lot of the obstacles by working
+                  closely with my mentor and through researching on possible
+                  solutions.
                 </p>
                 <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
                   Mission Ready HQ
@@ -53,11 +59,7 @@ const About = () => {
                   2016-2022
                 </h4>
                 <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-                  During the process of running our business, I experienced a
-                  little bit of Liquid and Jquery in managing our shopify
-                  website and a lot of software which was involved in acquiring
-                  stock which was very interesting to me, this ultimately lead
-                  me in to pursuing software development.
+                During the process of running our business, I got intrigued by technology as I was involved in finding and implementing solutions for things such as customer retention and staff management on a daily basis, which made me think, "What if I made something like this?" which ultimately led me to want to code and pursue becoming a developer.
                 </p>
               </div>
             </div>

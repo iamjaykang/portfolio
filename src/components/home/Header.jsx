@@ -3,37 +3,36 @@ import pdf from "../../assets/documents/jayKangCv.pdf";
 import MobileNavbar from "./MobileNavbar";
 import NavBar from "./NavBar";
 
+const links = [
+  {
+    title: "Home",
+    to: "home",
+  },
+  {
+    title: "Projects",
+    to: "projects",
+  },
+  {
+    title: "Tools",
+    to: "tools",
+  },
+  {
+    title: "About",
+    to: "about",
+  },
+  {
+    title: "Contact",
+    to: "contact",
+  },
+  {
+    title: "Resume",
+    to: pdf,
+    download: true,
+  },
+];
+
 const Header = ({ setDarkMode, darkMode }) => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-
-  const links = [
-    {
-      title: "Home",
-      to: "home",
-    },
-    {
-      title: "Projects",
-      to: "projects",
-    },
-    {
-      title: "Tools",
-      to: "tools",
-    },
-    {
-      title: "About",
-      to: "about",
-    },
-    {
-      title: "Contact",
-      to: "contact",
-    },
-    {
-      title: "Resume",
-      to: pdf,
-      download: true,
-    },
-  ];
-
   return (
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-neutral-900">
       <div className="flex mx-auto max-w-screen-xl">

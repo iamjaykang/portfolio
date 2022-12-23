@@ -1,39 +1,38 @@
 import React from "react";
 
+const tools = [
+  {
+    backend: [
+      ".Net",
+      "PostGresQL",
+      "Node",
+      "Express",
+      "MongoDB",
+      "MySQL",
+      "Redis",
+    ],
+    frontend: [
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "HTML",
+      "CSS",
+      "Material UI",
+      "JavaScript",
+    ],
+    other: [
+      "TypeScript",
+      "Azure DevOps",
+      "Machine Learning",
+      "Docker",
+      "Agile Methodology",
+      "Kanban",
+      "Github",
+      "Linear",
+    ],
+  },
+];
 const Tools = () => {
-  const tools = [
-    {
-      backend: [
-        ".Net",
-        "PostGresQL",
-        "Node",
-        "Express",
-        "MongoDB",
-        "MySQL",
-        "Redis",
-      ],
-      frontend: [
-        "React",
-        "Redux",
-        "Tailwind CSS",
-        "HTML",
-        "CSS",
-        "Material UI",
-        "JavaScript",
-      ],
-      other: [
-        "TypeScript",
-        "Azure DevOps",
-        "Machine Learning",
-        "Docker",
-        "Agile Methodology",
-        "Kanban",
-        "Github",
-        "Linear",
-      ],
-    },
-  ];
-
   return (
     <section
       name="tools"

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Home from "./pages/Home/Home";
-import CustomCursor from "./components/CustomCursor/CustomCursor";
+import Home from "./pages/home/Home";
+import CustomCursor from "./components/customCursor/CustomCursor";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

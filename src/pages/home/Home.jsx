@@ -1,12 +1,12 @@
 import React from "react";
-import About from "../../components/Home/About";
-import Contact from "../../components/Home/Contact";
-import Footer from "../../components/Home/Footer";
-import Header from "../../components/Home/Header";
-import Hero from "../../components/Home/Hero";
-import Projects from "../../components/Home/Projects";
-import SideNavBar from "../../components/Home/SideNavbar";
-import Tools from "../../components/Home/Tools";
+import About from "../../components/home/About";
+import Contact from "../../components/home/Contact";
+import Footer from "../../components/home/Footer";
+import Header from "../../components/home/Header";
+import Hero from "../../components/home/Hero";
+import Projects from "../../components/home/Projects";
+import SideNavBar from "../../components/home/SideNavbar";
+import Tools from "../../components/home/Tools";
 
 const Home = ({setDarkMode,darkMode}) => {
   return (
@@ -24,7 +24,7 @@ const Home = ({setDarkMode,darkMode}) => {
         <Contact />
       </main>
       <SideNavBar />
-      <footer className="p-4 mt-12 bg-white w-full text-center md:p-6 dark:bg-neutral-900">
+      <footer className="p-4 bg-white w-full text-center md:p-6 dark:bg-neutral-900">
       <Footer />
       </footer>
     </div>
