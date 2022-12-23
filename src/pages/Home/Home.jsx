@@ -24,7 +24,7 @@ const Home = ({setDarkMode,darkMode}) => {
         <Contact />
       </main>
       <SideNavBar />
-      <footer className="p-4 bg-white mt-auto w-full text-center md:p-6 dark:bg-neutral-900">
+      <footer className="p-4 mt-12 bg-white w-full text-center md:p-6 dark:bg-neutral-900">
       <Footer />
       </footer>
     </div>

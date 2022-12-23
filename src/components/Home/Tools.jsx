@@ -37,7 +37,7 @@ const Tools = () => {
   return (
     <section
       name="tools"
-      className="bg-white lg:h-screen dark:bg-neutral-900 relative"
+      className="bg-white lg:min-h-screen dark:bg-neutral-900 relative"
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">

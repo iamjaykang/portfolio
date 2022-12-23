@@ -57,7 +57,7 @@ const Projects = () => {
     }
   ];
   return (
-    <section name="projects" className="bg-white dark:bg-neutral-900 relative">
+    <section name="projects" className="bg-white dark:bg-neutral-900 relative lg:min-h-screen">
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="text-gray-500 sm:text-lg dark:text-gray-400">
           <h2 className="mb-16 text-4xl lg:text-5xl font-bold text-sky-600 dark:text-sky-700">

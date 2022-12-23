@@ -23,7 +23,7 @@ function App() {
         y: e.clientY,
       });
     };
-    
+
     window.addEventListener("mousemove", mouseMove);
 
     return () => {
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className={`App ${darkMode && "dark"}`}>
       <Home setDarkMode={setDarkMode} darkMode={darkMode} />
-      <CustomCursor variants={variants}/>
+      <CustomCursor variants={variants} />
     </div>
   );
 }

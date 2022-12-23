@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className="bg-white dark:bg-neutral-900 pb-32"
+      className="bg-white dark:bg-neutral-900"
     >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-gray-400">
