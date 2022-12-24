@@ -1,14 +1,16 @@
-import { motion } from "framer-motion";
 import React from "react";
 
-const CustomCursor = ({ variants }) => {
+const CustomCursor = ({ cursorRef, mouseEnter }) => {
   return (
-    <motion.div
-      className="hidden lg:block border-gray-400 border h-8 w-8 rounded-full z-50 pointer-events-none overflow-hidden fixed top-0 left-0 ease-out duration-500"
-      style={{
-        transform: `translate3d(${variants.default.x}px, ${variants.default.y}px, 0)`,
-      }}
-    ></motion.div>
+    <>
+      {cursorRef && (
+        <div
+          ref={cursorRef}
+          className={mouseEnter ? `hidden lg:block border-gray-400 h-8 w-8 rounded-full z-50 pointer-events-none overflow-hidden fixed ease-out duration-500 top-0 left-0 border` : 'hidden'}
+          id="app-cursor"
+        ></div>
+      )}
+    </>
   );
 };
 
