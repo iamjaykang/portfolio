@@ -4,8 +4,14 @@ import CustomCursor from "./components/customCursor/CustomCursor";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [mouseEnter, setMouseEnter] = useState(false);
   const cursorRef = useRef(null);
+
+  const onMouseLeave = () => {
+    cursorRef.current.style.border = "";
+  };
+  const onMouseEnter = () => {
+    cursorRef.current.style.border = "1px solid gray";
+  };
 
   useEffect(() => {
     const onMouseMove = (e) => {
@@ -14,21 +20,21 @@ function App() {
       const mouseY = clientY - cursorRef.current.clientHeight / 2;
       cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     };
+    document.addEventListener("mouseleave", onMouseLeave);
+    document.addEventListener("mouseenter", onMouseEnter);
     document.addEventListener("mousemove", onMouseMove);
 
     return () => {
       document.removeEventListener("mousemove", onMouseMove);
+      document.removeEventListener("mouseleave", onMouseLeave);
+      document.removeEventListener("mouseenter", onMouseEnter);
     };
   }, []);
 
   return (
-    <div
-      className={darkMode ? "App dark" : "App"}
-      onMouseEnter={() => setMouseEnter(true)}
-      onMouseLeave={() => setMouseEnter(false)}
-    >
+    <div className={darkMode ? "App dark" : "App"}>
       <Home setDarkMode={setDarkMode} darkMode={darkMode} />
-      <CustomCursor cursorRef={cursorRef} mouseEnter={mouseEnter} />
+      <CustomCursor cursorRef={cursorRef} />
     </div>
   );
 }

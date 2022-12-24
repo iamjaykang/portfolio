@@ -38,7 +38,7 @@ const Hero = () => {
             )}
           </motion.h1>
             <AnimatedSentence
-              sentence="I'm a Full-Stack developer, a sneaker enthusiast, and I have a passion for learning and coding. I can also fly planes!"
+              text="I'm a Full-Stack developer, a sneaker enthusiast, and I have a passion for learning and coding. I can also fly planes!"
             />
         </div>
       </div>

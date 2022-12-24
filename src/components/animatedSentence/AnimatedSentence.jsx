@@ -1,40 +1,26 @@
-import { motion } from "framer-motion";
-import React from "react";
+import React, { useEffect,useState } from "react";
 
-const paragraph = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      delay: 0.1,
-      staggerChildren: 0.03,
-    },
-  },
-};
+const AnimatedSentence = ({ text }) => {
+  const [typedText, setTypedText] = useState("");
+  const [phase, setPhase] = useState("typing");
 
-const letter = {
-  hidden: { opacity: 0, y: 50 },
-  visible: {
-    opacity: 1,
-    y: 0,
-  },
-};
-
-const AnimatedSentence = ({ sentence }) => {
-  const chars = sentence.split("");
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTypedText(text.slice(0, typedText.length + 1));
+      if (typedText === text) {
+        setPhase("completed");
+      }
+    }, 100);
+    return () => clearTimeout(timer);
+  }, [text, typedText]);
   return (
-    <motion.p
-      className="mb-6 font-bold text-gray-500 lg:mb-8 text-2xl md:text-3xl xl:text-4xl dark:text-gray-400"
-      variants={paragraph}
-      initial="hidden"
-      animate="visible"
-    >
-      {chars.map((char, i) => (
-        <motion.span key={i} variants={letter}>
-          {char}
-        </motion.span>
-      ))}
-    </motion.p>
+    <>
+    <div className="mt-2 mb-6 font-bold text-gray-500 lg:mb-8 text-2xl md:text-3xl xl:text-4xl dark:text-gray-400">
+      <span className={phase === "typing" ? "typing-cursor" : "blinking-cursor"}>
+        {typedText}
+      </span>
+    </div>
+    </>
   );
 };
 
