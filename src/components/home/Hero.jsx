@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import AnimatedSentence from "../animatedSentence/AnimatedSentence";
 
-const Hero = () => {
+const Hero = ({ isMobile }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -37,9 +37,14 @@ const Hero = () => {
               <span>👋</span>
             )}
           </motion.h1>
-            <AnimatedSentence
-              text="I'm a Full-Stack developer, a sneaker enthusiast, and I have a passion for learning and coding. I can also fly planes!"
-            />
+          {isMobile ? (
+            <div className="mt-2 mb-6 font-bold text-gray-500 lg:mb-8 text-2xl md:text-3xl xl:text-4xl dark:text-gray-400">
+              I'm a Full-Stack developer, a sneaker enthusiast, and I have a
+              passion for learning and coding. I can also fly planes!
+            </div>
+          ) : (
+            <AnimatedSentence text="I'm a Full-Stack developer, a sneaker enthusiast, and I have a passion for learning and coding. I can also fly planes!" />
+          )}
         </div>
       </div>
     </section>

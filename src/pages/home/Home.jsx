@@ -8,7 +8,7 @@ import Projects from "../../components/home/Projects";
 import SideNavBar from "../../components/home/SideNavbar";
 import Tools from "../../components/home/Tools";
 
-const Home = ({setDarkMode,darkMode}) => {
+const Home = ({setDarkMode,darkMode,isMobile}) => {
   return (
     <div
       className="scroll-smooth flex flex-col justify-between"
@@ -17,7 +17,7 @@ const Home = ({setDarkMode,darkMode}) => {
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />
       </header>
       <main className="min-h-screen">
-        <Hero />
+        <Hero isMobile={isMobile}/>
         <Projects />
         <Tools />
         <About />
