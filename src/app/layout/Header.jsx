@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import pdf from "../../assets/documents/jayKangCv.pdf";
 import MobileNavbar from "./MobileNavbar";
 import NavBar from "./NavBar";
@@ -31,8 +31,9 @@ const links = [
   },
 ];
 
-const Header = ({ setDarkMode, darkMode }) => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+const Header = (props) => {
+  const { setDarkMode, darkMode, navRef, handleClickOutside, navbarOpen, setNavbarOpen } = props;
+  
   return (
     <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-neutral-900">
       <div className="flex mx-auto max-w-screen-xl">
@@ -48,6 +49,7 @@ const Header = ({ setDarkMode, darkMode }) => {
         </div>
         <div className="flex items-center ml-auto lg:order-2 lg:hidden">
           <button
+          ref={navRef}
             type="button"
             className="inline-flex z-50 items-center p-2 ml-1 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             onClick={() => setNavbarOpen(!navbarOpen)}
@@ -80,12 +82,11 @@ const Header = ({ setDarkMode, darkMode }) => {
         </div>
         <div
           className={
-            "lg:ml-auto lg:flex lg:w-auto lg:order-1" +
+            "w-4/6 lg:ml-auto lg:flex lg:w-auto lg:order-1" +
             (!navbarOpen
               ? " hidden"
               : "bg-white dark:bg-neutral-900 w-full flex absolute opacity-80 right-0 h-screen")
           }
-          id="mobile-menu-2"
         >
           <NavBar
             links={links}
@@ -94,6 +95,8 @@ const Header = ({ setDarkMode, darkMode }) => {
             setDarkMode={setDarkMode}
           />
           <MobileNavbar
+            navRef={navRef}
+            handleClickOutside={handleClickOutside}
             links={links}
             navbarOpen={navbarOpen}
             setNavbarOpen={setNavbarOpen}

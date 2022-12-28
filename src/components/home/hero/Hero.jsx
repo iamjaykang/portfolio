@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import AnimatedSentence from "../animatedSentence/AnimatedSentence";
+import AnimatedSentence from "../../../app/common/animatedSentence/AnimatedSentence";
 
 const Hero = ({ isMobile }) => {
   const ref = useRef(null);
