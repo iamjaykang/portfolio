@@ -7,6 +7,8 @@ const CustomCursor = () => {
     cursorRef.current.style.border = "";
   };
   const onMouseEnter = () => {
+    cursorRef.current.style.left = 0;
+    cursorRef.current.style.top = 0;
     cursorRef.current.style.border = "1px solid gray";
   };
 
@@ -17,6 +19,7 @@ const CustomCursor = () => {
       const mouseY = clientY - cursorRef.current.clientHeight / 2;
       cursorRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     };
+
     document.addEventListener("mouseleave", onMouseLeave);
     document.addEventListener("mouseenter", onMouseEnter);
     document.addEventListener("mousemove", onMouseMove);
@@ -28,15 +31,11 @@ const CustomCursor = () => {
     };
   }, []);
   return (
-    <>
-      {cursorRef && (
-        <div
-          ref={cursorRef}
-          className={`hidden lg:block border-gray-400 h-8 w-8 rounded-full z-50 pointer-events-none overflow-hidden fixed ease-out duration-500 top-0 left-0`}
-          id="app-cursor"
-        ></div>
-      )}
-    </>
+    <div
+      ref={cursorRef}
+      data-testid="app-cursor"
+      className={`hidden lg:block border-gray-400 h-8 w-8 rounded-full z-50 pointer-events-none overflow-hidden fixed ease-out duration-500`}
+    ></div>
   );
 };
 

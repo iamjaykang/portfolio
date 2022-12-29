@@ -7,7 +7,6 @@ const DarkModeSwitcher = ({ setDarkMode, darkMode }) => {
   };
   return (
     <DarkModeSwitch
-      style={{}}
       checked={darkMode}
       onChange={toggleDarkMode}
       size={25}

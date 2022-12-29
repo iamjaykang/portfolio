@@ -50,6 +50,7 @@ const projects = [
       "JavaScript",
       "Netlify",
       "Tailwind CSS",
+      "Jest"
     ],
     live: "https://jaykang.info",
     code: "https://github.com/jaykang95/portfolio",
