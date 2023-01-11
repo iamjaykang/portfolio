@@ -15,10 +15,7 @@ const About = () => {
         <div className="max-w-screen-lg mx-auto grid grid-rows-1 gap-6 w-full h-full text-white dark:text-gray-500">
           <div className="mb-2">
             <p className="text-black dark:text-white text-xl lg:text-3xl">
-              I am a full-stack developer, I jumped into the field of
-              programming at the start of 2022, where I have since created
-              personal projects and collaborated with others through Mission
-              Ready HQ.
+            Full-stack developer with experience in personal projects and collaborations with other developers through Mission Ready HQ. Recent graduate with skills in coding and testing, DevOps and Agile methodologies.
             </p>
           </div>
           <div>
@@ -29,25 +26,16 @@ const About = () => {
               2022
             </h4>
             <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-              At the end of September, 2022. I went on to join Revived Design as
-              an Intern Software Developer, where I learnt a new language
-              (flutter) and got to further hone my skills in testing and DevOps
-              and the skills such as source control, even though there were
-              challenges to begin with, I am glad that I overcame a lot of the
-              obstacles by working closely with my mentor and through
-              researching on possible solutions.
+            Completed an internship at Revived Design as a Software Developer, where I gained experience in a new language (Flutter) and honed my skills in testing, DevOps and source control management. Worked closely with mentor to overcome obstacles and achieved improvements.
             </p>
             <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
-              Mission Ready HQ
+            Mission Ready HQ
             </h3>
             <h4 className="mb-2 text-black dark:text-white text-lg font-bold lg:text-xl">
               2022
             </h4>
             <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-              I joined Mission Ready HQ. where I got to experience working with
-              other developers and UX designers and also got to learn and hone
-              my skills on the tech stack and tools that are currently being
-              used in the industry and practise being an agile developer.
+            Completed a full-stack development program at Mission Ready HQ, where I gained hands-on experience in the tech stack and tools currently used in the industry, as well as Agile methodologies.
             </p>
             <h3 className="mb-4 text-xl lg:text-3xl tracking-tight font-bold text-sky-600 dark:text-sky-700">
               Prior Store
@@ -56,12 +44,7 @@ const About = () => {
               2016-2022
             </h4>
             <p className="mb-6 text-black dark:text-white text-lg lg:text-xl">
-              I co-founded this business with my brother, and during the process
-              of running the business, I was involved in finding and
-              implementing solutions for things such as customer retention, and
-              staff management. I also frequently customised our Shopify website
-              depending on our needs, and as I got more intrigued with tech, it
-              led me to pursue becoming a developer.
+            Co-founder of Prior Store, where I gained experience in customer retention, staff management, website customization and e-commerce, leading to my passion in the tech field and decision to become a developer.
             </p>
           </div>
         </div>

@@ -5,7 +5,7 @@ const projects = [
     name: "Revents App",
     img: "https://i.ibb.co/JjbRJfJ/dashboard.png",
     description:
-      "React TypeScript and .NET for the Backend. I utilised Semantic UI for theming and state management through MobX and use of PostgresQL for the database. Features like live chats with SignalR, and manage and create events and social media capability with the ability to follow other users dockerised and deployed on fly.io through CI/CD pipeline through Github Actions",
+      "A full-stack event management application built with React, TypeScript, .NET, MobX, PostgresQL and deployed with Docker, featuring live chats and social media functionality.",
     stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io", "Github Actions", "MediatR"],
     live: "https://revents.fly.dev",
     code: "https://github.com/jaykang95/Revents-App",
@@ -14,7 +14,7 @@ const projects = [
     name: "CRM Ticket System",
     img: "https://i.ibb.co/xJyFVPS/CRM-full-stack-app2.png",
     description:
-      "A CRUD CRM Ticket Application built with the MERN stack, with features like Admin & Client portals, dashboard, user validation and sign in, sign out, ticket query and the ability to add and update existing and new tickets. this app has been hosted on free tier on Render.com, so it could take a bit of time to load up",
+      "A MERN stack-based customer support and ticket management system, featuring client and admin portals, sign-up with OTP and dashboard, user validation, and the ability to add and update existing and new tickets, state management through Redux and hosted on free-tier Render.com with some loading time due to free plan limitations.",
     stacks: [
       "MongoDB",
       "Express",
@@ -32,19 +32,10 @@ const projects = [
     code: "https://github.com/jaykang95/crm-ticket-system",
   },
   {
-    name: "Pbtech Project",
-    img: "https://camo.githubusercontent.com/155c377088fa653c76753a430915bddd5fba281f1de1d3f6575b29ffe78589a3/68747470733a2f2f692e6962622e636f2f4a7a713250384e2f53637265656e2d53686f742d323032322d30392d32382d61742d322d35312d35342d414d2e706e67",
-    description:
-      "MERN stack app, pulls data from MongoDB through REST API to render the selection on the modal. I utilised the quicksort algorithm to sort items, and the filter method is used with the slider.",
-    stacks: ["MongoDB", "Express", "React", "Node", "Docker", "Tailwind CSS"],
-    live: "",
-    code: "https://github.com/jaykang95/pbtech-project",
-  },
-  {
     name: "Portfolio Website",
     img: "https://i.ibb.co/TwQPk3r/Screenshot-2022-12-24-at-1-07-01-AM.png",
     description:
-      "Solo project where I utilised React JS and Tailwind CSS to style the website, This website is hosted on Netlify on a custom domain , and some of the features include smooth scrolling to sections via the Navbar and dark & light themes with mobile responsiveness and desktop view",
+      "A React JS and Tailwind CSS based website, designed with smooth scrolling to sections via the Navbar, dark & light themes with mobile responsiveness and desktop view and hosted on a custom domain through Netlify.",
     stacks: [
       "React",
       "JavaScript",
@@ -54,7 +45,17 @@ const projects = [
     ],
     live: "https://jaykang.info",
     code: "https://github.com/jaykang95/portfolio",
-  }
+  },
+  {
+    name: "Pbtech Project",
+    img: "https://camo.githubusercontent.com/155c377088fa653c76753a430915bddd5fba281f1de1d3f6575b29ffe78589a3/68747470733a2f2f692e6962622e636f2f4a7a713250384e2f53637265656e2d53686f742d323032322d30392d32382d61742d322d35312d35342d414d2e706e67",
+    description:
+      "A full-stack application implemented using MERN stack with Quicksort algorithm and MongoDB as backend",
+    stacks: ["MongoDB", "Express", "React", "Node", "Docker", "Tailwind CSS"],
+    live: "",
+    code: "https://github.com/jaykang95/pbtech-project",
+  },
+
 ];
 const Projects = () => {
   return (

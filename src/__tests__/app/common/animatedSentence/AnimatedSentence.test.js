@@ -32,5 +32,5 @@ test("AnimatedSentence animates the blinking cursor during the completed phase",
   await waitFor(() => getByText(text));
 
   // Check that the phase is set to 'completed'
-  expect(getByTestId("cursor").classList).toContain("blinking-cursor");
+  expect(getByTestId("cursor")).toHaveClass("blinking-cursor");
 });
