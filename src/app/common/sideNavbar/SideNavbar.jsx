@@ -12,7 +12,7 @@ const links = [
         LinkedIn <FaLinkedin size={30} />
       </>
     ),
-    href: "https://www.linkedin.com/in/jay-kang-b5284a228/",
+    href: "https://www.linkedin.com/in/iamjaykang",
     style: "rounded-tr-md",
   },
   {
@@ -22,7 +22,7 @@ const links = [
         GitHub <FaGithub size={30} />
       </>
     ),
-    href: "https://github.com/jaykang95",
+    href: "https://github.com/iamjaykang",
   },
   {
     id: 3,

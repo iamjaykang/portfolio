@@ -2,17 +2,51 @@ import React from "react";
 
 const projects = [
   {
+    name: "Healthright E-commerce Website",
+    img: require('../../../assets/images/healthright.png'),
+    description:
+      "This project is an e-commerce website built using React JS, Firebase, styled with SCSS, and state management by Redux. The website allows users to browse and purchase products, as well as manage their shopping carts. The project also integrates with Google Dialogflow for conversational user experience.",
+    stacks: [
+      "React",
+      "JavaScript",
+      "Google Dialogflow",
+      "SCSS",
+      "Redux",
+      "Firebase",
+      "React Router",
+    ],
+    live: "https://dynamic-wisp-ef7e88.netlify.app",
+    code: "https://github.com/iamjaykang/healthright",
+  },
+  {
     name: "Revents App",
-    img: "https://i.ibb.co/JjbRJfJ/dashboard.png",
+    img: require('../../../assets/images/revents.png'),
     description:
       "A full-stack event management application built with React, TypeScript, .NET, MobX, PostgresQL and deployed with Docker, featuring live chats and social media functionality.",
-    stacks: ["React", "Semantic UI", "Axios", "TypeScript", "SignalR", "PostGresQL", ".NET", "JWT", "MobX", "Docker", "Cloudinary", "React Router", "AutoMapper", "fly.io", "Github Actions", "MediatR"],
+    stacks: [
+      "React",
+      "Semantic UI",
+      "Axios",
+      "TypeScript",
+      "SignalR",
+      "PostGresQL",
+      ".NET",
+      "JWT",
+      "MobX",
+      "Docker",
+      "Cloudinary",
+      "React Router",
+      "AutoMapper",
+      "fly.io",
+      "Github Actions",
+      "MediatR",
+    ],
     live: "https://revents.fly.dev",
-    code: "https://github.com/jaykang95/Revents-App",
+    code: "https://github.com/iamjaykang/Revents-App",
   },
   {
     name: "CRM Ticket System",
-    img: "https://i.ibb.co/xJyFVPS/CRM-full-stack-app2.png",
+    img: require('../../../assets/images/ticket.png'),
     description:
       "A MERN stack-based customer support and ticket management system, featuring client and admin portals, sign-up with OTP and dashboard, user validation, and the ability to add and update existing and new tickets, state management through Redux and hosted on free-tier Render.com with some loading time due to free plan limitations.",
     stacks: [
@@ -29,37 +63,24 @@ const projects = [
       "Heroku",
     ],
     live: "https://crudcrm-ticket.online",
-    code: "https://github.com/jaykang95/crm-ticket-system",
+    code: "https://github.com/iamjaykang/crm-ticket-system",
   },
   {
     name: "Portfolio Website",
-    img: "https://i.ibb.co/TwQPk3r/Screenshot-2022-12-24-at-1-07-01-AM.png",
+    img: require('../../../assets/images/portfolio.png'),
     description:
       "A React JS and Tailwind CSS based website, designed with smooth scrolling to sections via the Navbar, dark & light themes with mobile responsiveness and desktop view and hosted on a custom domain through Netlify.",
-    stacks: [
-      "React",
-      "JavaScript",
-      "Netlify",
-      "Tailwind CSS",
-      "Jest"
-    ],
+    stacks: ["React", "JavaScript", "Netlify", "Tailwind CSS", "Jest"],
     live: "https://jaykang.info",
-    code: "https://github.com/jaykang95/portfolio",
+    code: "https://github.com/iamjaykang/portfolio",
   },
-  {
-    name: "Pbtech Project",
-    img: "https://camo.githubusercontent.com/155c377088fa653c76753a430915bddd5fba281f1de1d3f6575b29ffe78589a3/68747470733a2f2f692e6962622e636f2f4a7a713250384e2f53637265656e2d53686f742d323032322d30392d32382d61742d322d35312d35342d414d2e706e67",
-    description:
-      "A full-stack application implemented using MERN stack with Quicksort algorithm and MongoDB as backend",
-    stacks: ["MongoDB", "Express", "React", "Node", "Docker", "Tailwind CSS"],
-    live: "",
-    code: "https://github.com/jaykang95/pbtech-project",
-  },
-
 ];
 const Projects = () => {
   return (
-    <section name="projects" className="bg-white dark:bg-neutral-900 relative lg:min-h-screen">
+    <section
+      name="projects"
+      className="bg-white dark:bg-neutral-900 relative lg:min-h-screen"
+    >
       <div className="p-4 mx-auto max-w-screen-xl lg:p-4">
         <div className="text-gray-500 sm:text-lg dark:text-gray-400">
           <h2 className="mb-16 text-4xl lg:text-5xl font-bold text-sky-600 dark:text-sky-700">
