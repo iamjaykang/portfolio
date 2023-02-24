@@ -1,15 +1,27 @@
 import React from "react";
+import ProjectCarousel from "../../../app/common/projectCarousel/ProjectCarousel";
 
 const projects = [
   {
     name: "Healthright E-commerce Website",
-    img: require('../../../assets/images/healthright.png'),
+    images: [
+      require("../../../assets/images/healthright.png"),
+      require("../../../assets/images/healthright-2.png"),
+      require("../../../assets/images/healthright-3.png"),
+      require("../../../assets/images/healthright-4.png"),
+      require("../../../assets/images/healthright-5.png"),
+  ],
     description:
-      "This project is an e-commerce website built using React JS, Firebase, styled with SCSS, and state management by Redux. The website allows users to browse and purchase products, as well as manage their shopping carts. The project also integrates with Google Dialogflow for conversational user experience.",
+      "This project is an e-commerce website built using React JS, Node.Js, Express.Js, Firebase Auth, Postgres SQL Sequelize ORM, styled with SCSS, and state management by Redux. The website allows users to browse and purchase products, as well as manage their shopping carts. The website also has an admin route that allows authenticated users with admin privileges to perform CRUD (Create, Read, Update, Delete) operations for products and customers.",
     stacks: [
       "React",
       "JavaScript",
+      "Node.js",
+      "Express.js",
       "Google Dialogflow",
+      "Chart.js",
+      "Sequelize ORM",
+      "Postgres SQL",
       "SCSS",
       "Redux",
       "Firebase",
@@ -20,7 +32,12 @@ const projects = [
   },
   {
     name: "Revents App",
-    img: require('../../../assets/images/revents.png'),
+    images: [
+      require("../../../assets/images/revents.png"),
+      require("../../../assets/images/revents-2.png"),
+      require("../../../assets/images/revents-3.png"),
+      require("../../../assets/images/revents-4.png"),
+    ],
     description:
       "A full-stack event management application built with React, TypeScript, .NET, MobX, PostgresQL and deployed with Docker, featuring live chats and social media functionality.",
     stacks: [
@@ -46,7 +63,12 @@ const projects = [
   },
   {
     name: "CRM Ticket System",
-    img: require('../../../assets/images/ticket.png'),
+    images: [
+      require("../../../assets/images/ticket.png"),
+      require("../../../assets/images/ticket-2.png"),
+      require("../../../assets/images/ticket-3.png"),
+      require("../../../assets/images/ticket-4.png"),
+  ],
     description:
       "A MERN stack-based customer support and ticket management system, featuring client and admin portals, sign-up with OTP and dashboard, user validation, and the ability to add and update existing and new tickets, state management through Redux and hosted on free-tier Render.com with some loading time due to free plan limitations.",
     stacks: [
@@ -67,7 +89,10 @@ const projects = [
   },
   {
     name: "Portfolio Website",
-    img: require('../../../assets/images/portfolio.png'),
+    images: [
+      require("../../../assets/images/portfolio.png"),
+      require("../../../assets/images/portfolio-2.png"),
+  ],
     description:
       "A React JS and Tailwind CSS based website, designed with smooth scrolling to sections via the Navbar, dark & light themes with mobile responsiveness and desktop view and hosted on a custom domain through Netlify.",
     stacks: ["React", "JavaScript", "Netlify", "Tailwind CSS", "Jest"],
@@ -91,19 +116,7 @@ const Projects = () => {
               <div key={i} className="mb-20">
                 <div className="grid grid-rows-1 gap-6 w-full h-full">
                   <div className="relative overflow-hidden rounded-lg shadow-lg">
-                    <img
-                      className="object-cover w-full h-full"
-                      src={project.img}
-                      alt={project.name}
-                    />
-                    <div className="absolute opacity-0 duration-300 top-0 left-0 px-6 py-4 bg-black w-full h-full hover:opacity-80 flex justify-center items-center flex-col">
-                      <h2 className="mb-3 text-base xs:text-2xl md:text-4xl font-semibold tracking-tight text-white">
-                        {project.name}
-                      </h2>
-                      <p className="leading-normal text-center text-xs xs:text-xl md:text-3xl text-gray-100">
-                        {project.description}
-                      </p>
-                    </div>
+                    <ProjectCarousel project={project} />
                   </div>
                 </div>
                 <div>
